@@ -1,0 +1,19 @@
+version: "3"
+services:
+  nodeApp:
+    image: wesleyab/nodedockerfile
+    ports:
+      - "8080"
+  java:
+    image: nginx
+    ports:
+      - "80"
+    depends_on:
+      - nodeApp
+  dotnet:
+    image: nginx-wesley
+    build:
+      context: .
+    ports:
+      - "80"
+  

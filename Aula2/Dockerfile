@@ -1,0 +1,17 @@
+FROM node:alpine
+
+ENV PORT=8080
+ENV HOME=/HOME/API
+
+
+
+ WORKDIR $HOME
+ COPY . $HOME
+
+
+EXPOSE 8080
+EXPOSE 8084
+
+RUN npm install
+CMD npm start
+

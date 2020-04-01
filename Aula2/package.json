@@ -1,0 +1,16 @@
+{
+  "name": "nodedockerfile",
+  "version": "1.0.0",
+  "main": "index.js",
+  "scripts": {
+    "start": "node index.js"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "express": "^4.14.1",
+    "nodemon": "^1.10.2"
+  },
+  "devDependencies": {},
+  "description": ""
+}
